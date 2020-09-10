@@ -1,5 +1,11 @@
 # Principles SOLID
 
+• SRP => Single Responsibility: Responsabilidad única.
+• OCP => Open/Closed: Abierto/Cerrado.
+• LSP => Liskov substitution: Sustitución de Liskov.
+• ISP => Interface segregation: Segregación de interfaz.
+• DIP => Dependency Inversion: Inversión de dependencia.
+
 This examples was generated with NODE JS and TypeScript
 
 ### What contain this project?
