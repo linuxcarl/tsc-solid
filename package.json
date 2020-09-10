@@ -10,7 +10,7 @@
     "prettier:base": "prettier --parser typescript --single-quote",
     "prettier:check": "npm run prettier:base -- --list-different \"./src/**/*.{ts}\"",
     "prettier:write": "npm run prettier:base -- --write \"./src/**/*.ts\"",
-    "test": "cross-env NODE_ENV=test jest --coverage",
+    "test": "jest --coverage",
     "test:watch": "jest --watch"
   },
   "author": "Carlos Enrique Ramírez Flores",
