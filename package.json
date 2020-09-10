@@ -4,7 +4,6 @@
   "description": "examples of book clean code",
   "main": "index.js",
   "scripts": {
-    "tsc": "tsc",
     "dev:lsp": "ts-node-dev --respawn --transpile-only ./src/lsp/index.ts",
     "tslint": "tslint --project tsconfig.json",
     "prettier:base": "prettier --parser typescript --single-quote",
@@ -14,7 +13,7 @@
     "test:watch": "jest --watch"
   },
   "author": "Carlos Enrique Ramírez Flores",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
     "@types/jest": "^26.0.13",
     "@types/supertest": "^2.0.10",
