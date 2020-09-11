@@ -1,10 +1,10 @@
 # Principles SOLID
 
-• SRP => Single Responsibility: Responsabilidad única.
-• OCP => Open/Closed: Abierto/Cerrado.
-• LSP => Liskov substitution: Sustitución de Liskov.
-• ISP => Interface segregation: Segregación de interfaz.
-• DIP => Dependency Inversion: Inversión de dependencia.
+- SRP => Single Responsibility: Responsabilidad única.
+- OCP => Open/Closed: Abierto/Cerrado.
+- LSP => Liskov substitution: Sustitución de Liskov.
+- ISP => Interface segregation: Segregación de interfaz.
+- DIP => Dependency Inversion: Inversión de dependencia.
 
 This examples was generated with NODE JS and TypeScript
 
@@ -28,6 +28,16 @@ Run test with Jest
 ```
 
 npm run test
+
+```
+
+Run example SRP
+
+If you want run SRP mode develop, run the next line:
+
+```
+
+npm run dev:srp
 
 ```
 
