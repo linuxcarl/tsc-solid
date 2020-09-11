@@ -17,7 +17,7 @@ export class UseCase {
     }
   }
 
-  public notify(): void {
+  public notify(): boolean {
     try {
       const send = this.#notifier.notify('Hi friend! it send mai...');
       return send;
