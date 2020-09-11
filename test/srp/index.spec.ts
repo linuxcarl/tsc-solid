@@ -17,7 +17,7 @@ describe('Single Responsibility principle. - SRP', () => {
     const savedResult: string = myUseCase.saveChanges();
     expect(savedResult).toMatch(/record/);
   });
-  test('Should test the method notify', () => {
+  test('Should test the method notify and return true', () => {
     const noty = myUseCase.notify();
     expect(noty).toBeTruthy();
   });

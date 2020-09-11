@@ -41,6 +41,16 @@ npm run dev:srp
 
 ```
 
+Run example OCP
+
+If you want run OCP mode develop, run the next line:
+
+```
+
+npm run dev:ocp
+
+```
+
 Run example LSP
 
 If you want run LSP mode develop, run the next line:
