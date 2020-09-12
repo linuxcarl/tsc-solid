@@ -71,6 +71,16 @@ npm run dev:isp
 
 ```
 
+Run example DIP
+
+If you want run DIP mode develop, run the next line:
+
+```
+
+npm run dev:dip
+
+```
+
 Compile app to js
 
 If you want run mode production, first compile app, run the next line:
