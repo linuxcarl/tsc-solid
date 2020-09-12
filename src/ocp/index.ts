@@ -1,12 +1,14 @@
-const axios = require('axios');
+import { ClientWrapper } from './infrastructure/clientWrapper';
+import { TodoService } from './domain/TodoService';
 
-class AllExternalService {
-  #url: string = 'https://jsonplaceholder.typicode.com/todos/';
-  public async requestAllItems(cb: any): Promise<any> {
-    await axios.get(this.#url).then(cb);
-  }
-}
+const start = async () => {
+  const client = new ClientWrapper();
+  const todoService = new TodoService(client);
 
-const item = new AllExternalService();
-
-item.requestAllItems((response: any) => console.log(response.data));
+  let result: string[] = [];
+  await todoService
+    .requestTodoItems((response: any) => response.data)
+    .then((res: string[]) => (result = res));
+  console.log(result);
+};
+start();
