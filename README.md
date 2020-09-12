@@ -61,6 +61,16 @@ npm run dev:lsp
 
 ```
 
+Run example ISP
+
+If you want run ISP mode develop, run the next line:
+
+```
+
+npm run dev:isp
+
+```
+
 Compile app to js
 
 If you want run mode production, first compile app, run the next line:
