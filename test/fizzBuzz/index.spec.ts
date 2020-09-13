@@ -1,22 +1,31 @@
 import { FizzBuzz } from '../../src/fizzBuzz';
 
+const fizzBuzz = new FizzBuzz();
 describe('Test FizzBuzz', () => {
   it('Slould be to have one', () => {
-    const fizzBuzz = new FizzBuzz();
-    expect(fizzBuzz.converFizzBuzz(1)).toBe(1);
+    const expected = 1;
+    const result = fizzBuzz.converFizzBuzz(1);
+
+    expect(result).toBe(expected);
   });
   it('Slould be to have Fizz', () => {
-    const fizzBuzz = new FizzBuzz();
-    expect(fizzBuzz.converFizzBuzz(3)).toMatch(/Fizz/);
+    const expected = /Fizz/;
+    const result = fizzBuzz.converFizzBuzz(3);
+
+    expect(result).toMatch(expected);
   });
 
   it('Slould be to have Buzz', () => {
-    const fizzBuzz = new FizzBuzz();
-    expect(fizzBuzz.converFizzBuzz(5)).toMatch(/Buzz/);
+    const expected = /Buzz/;
+    const result = fizzBuzz.converFizzBuzz(5);
+
+    expect(result).toMatch(expected);
   });
 
   it('Slould be to have FizzBuzz', () => {
-    const fizzBuzz = new FizzBuzz();
-    expect(fizzBuzz.converFizzBuzz(15)).toMatch(/FizzBuzz/);
+    const expected = /FizzBuzz/;
+    const result = fizzBuzz.converFizzBuzz(15);
+
+    expect(result).toMatch(expected);
   });
 });
