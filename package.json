@@ -35,8 +35,8 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "npm run prettier:write && jest --bail",
-      "pre-push": "npm run test"
+      "pre-commit": "npm run tslint && npm run prettier:write && jest --bail",
+      "pre-push": "npm run tslint && npm run test"
     }
   },
   "jest": {
