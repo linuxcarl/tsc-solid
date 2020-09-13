@@ -1,4 +1,4 @@
-const axios = require('axios');
+import axios from 'axios';
 export class ClientWrapper {
   public async makeGetRequest(url: string, cb: any): Promise<any> {
     return await axios.get(url).then(cb);
