@@ -1,5 +1,8 @@
+import { FizzBuzz } from '../../src/fizzBuzz';
+
 describe('Test FizzBuzz', () => {
-  it('', () => {
-    expect(true).toBe(true);
+  it('Slould be to have one', () => {
+    const fizzBuzz = new FizzBuzz();
+    expect(fizzBuzz.converFizzBuzz(1)).toBe(1);
   });
 });
