@@ -14,4 +14,9 @@ describe('Test FizzBuzz', () => {
     const fizzBuzz = new FizzBuzz();
     expect(fizzBuzz.converFizzBuzz(5)).toMatch(/Buzz/);
   });
+
+  it('Slould be to have FizzBuzz', () => {
+    const fizzBuzz = new FizzBuzz();
+    expect(fizzBuzz.converFizzBuzz(15)).toMatch(/FizzBuzz/);
+  });
 });
