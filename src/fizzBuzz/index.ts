@@ -1,15 +1,16 @@
-type responseFizzBuzz = number | string;
-export class FizzBuzz {
+import {
+  IFizzBuzz,
+  responseFizzBuzz,
+} from '../../test/fizzBuzz/intefaces/fizzBuzz';
+
+export class FizzBuzz implements IFizzBuzz {
   public converFizzBuzz(num: number): responseFizzBuzz {
-    let numero: responseFizzBuzz = num;
-    const multiploDeTres: number = num % 3;
-    const multiploDeCinco: number = num % 5;
-    if (multiploDeTres === 0) {
-      numero = 'Fizz';
-    }
-    if (multiploDeCinco === 0) {
-      numero = typeof numero === 'string' ? `${numero}Buzz` : 'Buzz';
-    }
-    return numero;
+    const divisibleBy = (divider: number, n: number) => n % divider === 0;
+
+    if (divisibleBy(15, num)) return 'FizzBuzz';
+    if (divisibleBy(3, num)) return 'Fizz';
+    if (divisibleBy(5, num)) return 'Buzz';
+
+    return num;
   }
 }
